@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运动控制系统 - 精准控制，驱动未来</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-cogs"></i> 运动控制系统
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">产品中心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">新闻中心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">精准控制<br>驱动未来</h1>
+                    <p class="hero-subtitle">专业的运动控制解决方案提供商<br>为您提供高精度、高可靠性的产品和服务</p>
+                    <div class="hero-buttons">
+                        <a href="products.html" class="btn btn-primary btn-lg me-3">了解产品</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg">联系我们</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 特色产品 -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">特色产品</h2>
+                <p class="section-subtitle">为您精选的优质运动控制产品</p>
+            </div>
+            <div class="row" id="featured-products">
+                <!-- 产品将通过JavaScript动态加载 -->
+            </div>
+            <div class="text-center mt-4">
+                <a href="products.html" class="btn btn-primary">查看全部产品</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 公司优势 -->
+    <section class="advantages bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">为什么选择我们</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="advantage-card text-center">
+                        <i class="fas fa-medal"></i>
+                        <h4>专业技术</h4>
+                        <p>10年行业经验，拥有专业的研发团队</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="advantage-card text-center">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>品质保证</h4>
+                        <p>严格的质量控制体系，确保产品可靠性</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="advantage-card text-center">
+                        <i class="fas fa-headset"></i>
+                        <h4>完善服务</h4>
+                        <p>7×24小时技术支持，快速响应客户需求</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新新闻 -->
+    <section class="latest-news">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">最新动态</h2>
+                <p class="section-subtitle">了解行业资讯和公司新闻</p>
+            </div>
+            <div class="row" id="latest-news">
+                <!-- 新闻将通过JavaScript动态加载 -->
+            </div>
+            <div class="text-center mt-4">
+                <a href="news.html" class="btn btn-primary">查看全部新闻</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4>运动控制系统</h4>
+                    <p>专业的运动控制解决方案提供商，致力于为客户提供高品质的产品和服务。</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>快速链接</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html">产品中心</a></li>
+                        <li><a href="news.html">新闻中心</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>联系方式</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone"></i> 400-123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@YDKZ.COM</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 北京市朝阳区科技园</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 运动控制系统有限公司. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/data-loader-embedded.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

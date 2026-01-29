@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻详情 - 运动控制系统</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-gears">
+                    <i class="fas fa-cog gear-left"></i>
+                    <i class="fas fa-cog gear-right"></i>
+                </span>运动控制系统
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">产品中心</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">新闻中心</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">关于我们</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">新闻详情</h1>
+            <p class="page-subtitle">深入了解最新动态</p>
+        </div>
+    </header>
+
+    <!-- 新闻详情 -->
+    <section class="content-section">
+        <div class="container">
+            <!-- 加载状态 -->
+            <div id="loading" style="text-align: center; padding: 50px;">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p style="margin-top: 20px;">正在加载新闻内容...</p>
+            </div>
+
+            <!-- 错误提示 -->
+            <div id="error" style="display: none; padding: 20px; background: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px; color: #721c24;">
+                <h4><i class="fas fa-exclamation-circle"></i> 加载失败</h4>
+                <p id="error-message"></p>
+                <a href="news.html" class="btn btn-primary">返回新闻列表</a>
+            </div>
+
+            <!-- 新闻内容 -->
+            <div id="news-content" style="display: none;">
+                <div class="news-detail-header" style="border-bottom: 2px solid #e5e7eb; padding-bottom: 20px; margin-bottom: 30px;">
+                    <h1 id="news-title" style="color: #0a2540; margin-bottom: 15px;"></h1>
+                    <div id="news-date" style="color: #6b7280;"></div>
+                </div>
+                <div id="news-body" style="line-height: 1.8; font-size: 1.1rem;"></div>
+            </div>
+
+            <div class="mt-4">
+                <a href="news.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> 返回新闻列表
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4>运动控制系统</h4>
+                    <p>专业的运动控制解决方案提供商，致力于为客户提供高品质的产品和服务。</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>快速链接</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html">产品中心</a></li>
+                        <li><a href="news.html">新闻中心</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>联系方式</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone"></i> 400-123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@YDKZ.COM</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 北京市朝阳区科技园</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 运动控制系统有限公司. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/data-loader-embedded.js"></script>
+    <script>
+        // 获取URL参数
+        function getUrlParam(name) {
+            var search = window.location.search;
+            if (!search) return null;
+            search = search.substring(1);
+            var params = search.split('&');
+            for (var i = 0; i < params.length; i++) {
+                var pair = params[i].split('=');
+                if (pair[0] === name) {
+                    return decodeURIComponent(pair[1] || '');
+                }
+            }
+            return null;
+        }
+
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            var loadingEl = document.getElementById('loading');
+            var errorEl = document.getElementById('error');
+            var errorMsgEl = document.getElementById('error-message');
+            var newsContentEl = document.getElementById('news-content');
+
+            // 获取URL参数
+            var newsId = getUrlParam('id');
+
+            if (!newsId) {
+                loadingEl.style.display = 'none';
+                errorMsgEl.textContent = '未提供新闻ID';
+                errorEl.style.display = 'block';
+                return;
+            }
+
+            // 查找新闻
+            var newsItem = null;
+            var idNum = parseInt(newsId);
+            for (var i = 0; i < newsData.length; i++) {
+                if (newsData[i].id === idNum) {
+                    newsItem = newsData[i];
+                    break;
+                }
+            }
+
+            if (!newsItem) {
+                loadingEl.style.display = 'none';
+                errorMsgEl.textContent = '未找到新闻（ID: ' + newsId + '）';
+                errorEl.style.display = 'block';
+                return;
+            }
+
+            // 显示内容
+            loadingEl.style.display = 'none';
+            document.getElementById('news-title').textContent = newsItem.title;
+            document.getElementById('news-date').innerHTML = '<i class="far fa-calendar-alt"></i> ' + newsItem.date;
+            document.getElementById('news-body').innerHTML = newsItem.content;
+
+            newsContentEl.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

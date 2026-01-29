@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运动控制系统 - 精准控制，驱动未来</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-gears">
+                    <i class="fas fa-cog gear-left"></i>
+                    <i class="fas fa-cog gear-right"></i>
+                </span>
+                运动控制系统
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">产品中心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">新闻中心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="hero-content fade-in">
+                        <h1 class="hero-title">精准控制<br><span class="gradient-text">驱动未来</span></h1>
+                        <p class="hero-subtitle">专业的运动控制解决方案提供商<br>为您提供高精度、高可靠性的产品和服务</p>
+                        <div class="hero-buttons">
+                            <a href="products.html" class="btn btn-primary btn-lg hero-btn">
+                                <i class="fas fa-rocket me-2"></i>了解产品
+                            </a>
+                            <a href="contact.html" class="btn btn-outline-light btn-lg hero-btn">
+                                <i class="fas fa-envelope me-2"></i>联系我们
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">年行业经验</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">服务客户</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">99%</div>
+                                <div class="stat-label">客户满意度</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-image fade-in">
+                        <div class="gear-container">
+                            <div class="gear gear-large">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div class="gear gear-small">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- 特色产品 -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge section-badge">PRODUCTS</span>
+                <h2 class="section-title">特色产品</h2>
+                <p class="section-subtitle">为您精选的优质运动控制产品</p>
+            </div>
+            <div class="row" id="featured-products">
+                <!-- 产品将通过JavaScript动态加载 -->
+            </div>
+            <div class="text-center mt-5">
+                <a href="products.html" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-th-large me-2"></i>查看全部产品
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 公司优势 -->
+    <section class="advantages">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge section-badge">ADVANTAGES</span>
+                <h2 class="section-title">为什么选择我们</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h4>专业技术</h4>
+                        <p>10年行业经验，拥有专业的研发团队，持续创新</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>品质保证</h4>
+                        <p>严格的质量控制体系，ISO认证，确保产品可靠性</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>完善服务</h4>
+                        <p>7×24小时技术支持，快速响应客户需求</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>持续创新</h4>
+                        <p>投入研发，不断推出新产品和解决方案</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务流程 -->
+    <section class="service-process">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge section-badge">PROCESS</span>
+                <h2 class="section-title">服务流程</h2>
+                <p class="section-subtitle">从需求到交付，我们提供全方位服务</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number">01</div>
+                        <div class="process-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>需求咨询</h4>
+                        <p>了解您的需求，提供专业建议</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number">02</div>
+                        <div class="process-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>方案设计</h4>
+                        <p>定制解决方案，满足特殊需求</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number">03</div>
+                        <div class="process-icon">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <h4>产品交付</h4>
+                        <p>按时交付，保证产品质量</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number">04</div>
+                        <div class="process-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>技术支持</h4>
+                        <p>持续支持，确保稳定运行</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新新闻 -->
+    <section class="latest-news">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge section-badge">NEWS</span>
+                <h2 class="section-title">最新动态</h2>
+                <p class="section-subtitle">了解行业资讯和公司新闻</p>
+            </div>
+            <div class="row" id="latest-news">
+                <!-- 新闻将通过JavaScript动态加载 -->
+            </div>
+            <div class="text-center mt-5">
+                <a href="news.html" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-newspaper me-2"></i>查看全部新闻
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA区域 -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>准备好开始了吗？</h2>
+                <p>立即联系我们，获取专业的运动控制解决方案</p>
+                <a href="contact.html" class="btn btn-light btn-lg">
+                    <i class="fas fa-phone me-2"></i>联系我们
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-about">
+                        <h3><i class="fas fa-cogs"></i> 运动控制系统</h3>
+                        <p>专业的运动控制解决方案提供商，致力于为客户提供高品质的产品和服务。我们以技术创新为驱动，以客户满意为目标，不断追求卓越。</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-weixin"></i></a>
+                            <a href="#"><i class="fab fa-weibo"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h4>快速链接</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="products.html"><i class="fas fa-angle-right me-2"></i>产品中心</a></li>
+                            <li><a href="news.html"><i class="fas fa-angle-right me-2"></i>新闻中心</a></li>
+                            <li><a href="about.html"><i class="fas fa-angle-right me-2"></i>关于我们</a></li>
+                            <li><a href="contact.html"><i class="fas fa-angle-right me-2"></i>联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-contact">
+                        <h4>联系方式</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-phone-alt me-3"></i> 400-123-4567</li>
+                            <li><i class="fas fa-envelope me-3"></i> info@YDKZ.COM</li>
+                            <li><i class="fas fa-map-marker-alt me-3"></i> 北京市朝阳区科技园</li>
+                            <li><i class="fas fa-clock me-3"></i> 周一至周五 9:00-18:00</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-newsletter">
+                        <h4>订阅我们</h4>
+                        <p>获取最新产品信息和行业动态</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="form-control" placeholder="输入您的邮箱">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>&copy; 2024 运动控制系统有限公司. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/data-loader-embedded.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // 回到顶部按钮
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
